@@ -11,7 +11,6 @@
     				<h6 class="card-subtitle mb-2 text-muted">This Product is added by {{$product->user->name}}.</h6>
     				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-    				<p>This will be in auction on {{$product->to_be_auctioned_on}}</p>
     				<div class="row"  style="padding-bottom: 10px;">
     					<div class="col-6"><a href="/products/{{$product->id}}" class="card-link col-6 btn btn-primary">View</a></div>
     					<div class="col-6"><a href="/products/{{$product->id}}" class="card-link col-6 btn btn-success">Buy</a></div>

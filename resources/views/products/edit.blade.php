@@ -15,10 +15,6 @@
 				<label for="Cost" >Cost:</label>
 				<input type="text" name="Cost" placeholder="Price of the Product" class="form-control" value="{{$product->Cost}}">
 			</div>
-			<div>
-				<label for="to_be_auctioned_on" >Auction Date:</label>
-				<input type="date" name="to_be_auctioned_on" placeholder="To be Auctioned on" class="form-control" value="{{$product->to_be_auctioned_on}}">
-			</div>
 			<br>
 			<div>
 				<button type="submit" class="btn btn-primary">Submit</button>		

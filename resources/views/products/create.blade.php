@@ -14,10 +14,6 @@
 				<label for="Cost" >Cost:</label>
 				<input type="text" name="Cost" placeholder="Price of the Product" class="form-control">
 			</div><br>
-			<div>
-				<label for="to_be_auctioned_on" >Auction Date:</label>
-				<input type="date" name="to_be_auctioned_on" placeholder="To be Auctioned on .." class="form-control">
-			</div><br>
 			<!--<div class="form-group">
 				<input type="file" name="product_image" id="image">
 			</div>-->

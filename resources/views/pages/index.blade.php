@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="jumbotron text-center">
-    <h1>Auction Website</h1>
-    <h5>Sell your unused Items.<br>Your peers may need them</h5>
+    <h1>Muse Website</h1>
+    <h5>An application to buy and sell 'almost' everything</h5>
     <p><a class="btn btn-primary btn-lg" href="/dashboard" role="button">Login</a>  <a class="btn btn-primary btn-lg" href="/register" role="button">Register</a></p>
     </div>
 @endsection

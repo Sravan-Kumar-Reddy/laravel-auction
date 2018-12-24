@@ -17,7 +17,6 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('Name');
             $table->integer('Cost');
-            $table->date('to_be_auctioned_on');
 
             //$table->integer('Description');
             $table->timestamps();

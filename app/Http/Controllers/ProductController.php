@@ -23,7 +23,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::orderBy('to_be_auctioned_on','asc')->paginate(8);
+        $products = Product::orderBy('Name','asc')->paginate(8);
         return view('products.index',compact('products'));
     }
 
@@ -49,7 +49,6 @@ class ProductController extends Controller
         $this->validate($request,[
             'Name'=>'required',
             'Cost'=>'required',
-            'to_be_auctioned_on' =>'required',
             //'product_image'=>'required|image|nullable|mimes:jpeg,png,jpg,gif,svg|max:1999'
         ]);
         /*
@@ -67,7 +66,6 @@ class ProductController extends Controller
         $product = new Product;
         $product->Name = $request->input('Name');
         $product->Cost = $request->input('Cost');
-        $product->to_be_auctioned_on = $request->input('to_be_auctioned_on');
         $product->user_id = auth()->user()->id;
         $product->save();
         return redirect('/products')->with('success','Product Added'); 
@@ -120,7 +118,6 @@ class ProductController extends Controller
         $product =Product::find($id);
         $product->Name = $request->input('Name');
         $product->Cost = $request->input('Cost');
-        $product->to_be_auctioned_on = $request->input('to_be_auctioned_on');
         $product->save();
         return redirect('/products')->with('success','Product Updated');
     }
@@ -150,13 +147,4 @@ class ProductController extends Controller
         //redirect to auctions
     }*/
 
-    public function auctions(){
-        $products = Product::all();
-        /*function bids($id){
-            $product = Product::find($id);
-            $newCost = $product->cost+1;
-            return $newCost;
-        }*/
-        return view('products.auctions',compact('products'));
-    }
 }

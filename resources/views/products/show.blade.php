@@ -7,13 +7,6 @@
     		<h5 class="card-title">{{$product->Name}}</h5>
     		<h6 class="card0-subtitle mb-2 text-muted">{{$product->user->name}}</h6>
     		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<div class="row">
-    			<div class="col-6">
-    				<p>This product will be auctioned on {{$product->to_be_auctioned_on}}</p>	
-    			</div>
-    			<div class="col-6">
-    			</div>
-    		</div>
 		    <div class="row">
     			<div class="col-6">	
     			</div>
